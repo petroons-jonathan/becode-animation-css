@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black; }
+  body .bouton {
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 5vh;
+    color: white;
+    border: solid 3px;
+    transition: background-color 0.5s, color 0.5s, border 0.5s; }
+    body .bouton:hover {
+      background-color: white;
+      color: black;
+      border: solid 3px white; }
+  body .bouton-2 {
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 5vh;
+    color: white;
+    border: solid 3px;
+    transition-duration: 1s;
+    transition-timing-function: ease; }
+    body .bouton-2:hover {
+      background-color: white;
+      color: black;
+      border: solid 3px white;
+      transform: scale(1.2, 1.2); }
+  body .bouton-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 5vh;
+    color: white;
+    border: solid 3px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease; }
+    body .bouton-3:hover {
+      background-color: white;
+      color: black;
+      border: solid 3px white;
+      transform: translateX(100px); }
+
+/*# sourceMappingURL=style.css.map */

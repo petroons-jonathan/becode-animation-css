@@ -1,0 +1,50 @@
+@mixin box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:15vw;
+    height: 5vh;
+    color:white;
+    border: solid 3px;
+}
+@mixin transition {
+    background-color: white;
+    color:black;
+    border: solid 3px white;
+}
+body {
+    display:flex;
+    justify-content: center;
+    background-color: black;
+    .bouton {
+        margin-right: 15px;
+        @include box;
+        transition: background-color 0.5s, color 0.5s, border 0.5s;
+        &:hover {
+            @include transition;
+
+        }
+    }
+    .bouton-2 {
+        margin-right:15px;
+        @include box;
+        transition-duration:1s;
+        transition-timing-function: ease;
+        &:hover {
+            @include transition;
+            transform: scale(1.2,1.2)
+        }
+
+    }
+    .bouton-3 {
+        @include box;
+        transition-property: transform;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+        &:hover {
+            @include transition;
+            transform: translateX(100px);
+        }
+
+    }
+}
